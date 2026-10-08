@@ -1,0 +1,7 @@
+build/
+node_modules/
+*.hex
+*.elf
+*.bin
+.env
+*.ino

@@ -1,0 +1,11 @@
+{
+  "name": "movement-code",
+  "version": "1.0.0",
+  "scripts": {
+    "arduino:compile": ". ./.env && arduino-cli compile --fqbn $ARDUINO_FQBN --build-path ./build",
+    "arduino:upload": ". ./.env && arduino-cli upload -p $ARDUINO_PORT --fqbn $ARDUINO_FQBN --build-path ./build",
+    "arduino:all": "pnpm run arduino:compile && pnpm run arduino:upload",
+    "arduino:monitor": ". ./.env && arduino-cli monitor -p $ARDUINO_PORT -b $ARDUINO_BAUD",
+    "arduino:clean": "rm -rf ./build"
+  }
+}
