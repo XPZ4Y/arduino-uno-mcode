@@ -3,6 +3,6 @@ profiles:
   default:
     fqbn: arduino:renesas_uno:unor4wifi
     platforms:
-      - platform: arduino:renesas_uno (4.0.0)
+      - platform: arduino:renesas_uno (1.6.0)
     source_paths:
       - src
